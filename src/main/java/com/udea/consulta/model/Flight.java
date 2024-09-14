@@ -17,16 +17,47 @@ public class Flight {
     private String destination;
     private LocalDate date;
     private double price;
+    private String tipoEquipaje;
+    private String tipoClase;
+    private Integer numPasajeroMax;
+
 
     public Flight() {
     }
 
-    public Flight(Long id, String origin, String destination, LocalDate date, double price) {
+    public Flight(Long id, String origin, String destination, LocalDate date, double price, String tipoEquipaje, String tipoClase, Integer numPasajeroMax) {
         this.id = id;
         this.origin = origin;
         this.destination = destination;
         this.date = date;
         this.price = price;
+        this.tipoEquipaje = tipoEquipaje;
+        this.tipoClase = tipoClase;
+        this.numPasajeroMax = numPasajeroMax;
+    }
+
+    public String getTipoEquipaje() {
+        return tipoEquipaje;
+    }
+
+    public void setTipoEquipaje(String tipoEquipaje) {
+        this.tipoEquipaje = tipoEquipaje;
+    }
+
+    public String getTipoClase() {
+        return tipoClase;
+    }
+
+    public void setTipoClase(String tipoClase) {
+        this.tipoClase = tipoClase;
+    }
+
+    public Integer getNumPasajeroMax() {
+        return numPasajeroMax;
+    }
+
+    public void setNumPasajeroMax(Integer numPasajeroMax) {
+        this.numPasajeroMax = numPasajeroMax;
     }
 
     public Long getId() {
